@@ -60,8 +60,8 @@ def process_gz_files_in_directory(source_dir, target_dir, json_dir):
         convert_file_to_json(file_path, json_dir)
 
 
-source_dir = 'D:\IFT\ift6255\devoir1\AP'
-target_dir = 'D:\IFT\ift6255\devoir1\Data'
-json_dir = 'D:\IFT\ift6255\devoir1\Data_json'
+source_dir = 'AP'
+target_dir = 'Data'
+json_dir = 'Data_json'
 
 process_gz_files_in_directory(source_dir, target_dir, json_dir)
