@@ -24,7 +24,7 @@ def parse_topics_to_tsv(text_data):
     return tsv_result
 
 # File path
-text_data_path = r"D:\IFT\ift6255\devoir1\AP_topics.1-150.txt"
+text_data_path = r"AP_topics.1-150.txt"
 
 # Read the file content
 with open(text_data_path, 'r') as file:
@@ -34,7 +34,7 @@ with open(text_data_path, 'r') as file:
 tsv_output = parse_topics_to_tsv(text_data)
 
 # Write the TSV content to a file
-output_file_path = r'D:\IFT\ift6255\devoir1\tests\resources\sample_queries.tsv'
+output_file_path = r'tsv/query.tsv'
 with open(output_file_path, 'w') as file:
     file.write(tsv_output)
 
