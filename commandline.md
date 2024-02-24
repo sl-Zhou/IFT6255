@@ -1,4 +1,4 @@
-# Exp1: porter + no stopwords + BM25
+# Exp1: porter + stopwords + BM25
 ## Indexing
 python3 -m pyserini.index.lucene   \
 --collection JsonCollection   \
@@ -6,7 +6,7 @@ python3 -m pyserini.index.lucene   \
 --index indexes/exp1 \
  --generator DefaultLuceneDocumentGenerator   \
  --threads 2  \
- --stemmer none  \
+ --stemmer porter  \
  --stopwords stop_words  \
  --storePositions --storeDocvectors --storeRaw
  ## Search
