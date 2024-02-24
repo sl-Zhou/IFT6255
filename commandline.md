@@ -3,7 +3,7 @@
 python3 -m pyserini.index.lucene   \
 --collection JsonCollection   \
 --input Data_json   \
---index indexes/exp6 \
+--index indexes/exp1 \
  --generator DefaultLuceneDocumentGenerator   \
  --threads 2  \
  --stemmer none  \
